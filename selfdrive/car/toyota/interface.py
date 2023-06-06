@@ -82,7 +82,7 @@ class CarInterface(CarInterfaceBase):
       ret.steerRatio = 16.  # 14.8 is spec end-to-end
       ret.wheelSpeedFactor = 1.035
       tire_stiffness_factor = 0.5533
-      ret.mass = 4481. * CV.LB_TO_KG + STD_CARGO_KG  # mean between min and max
+      ret.mass = 4740. * CV.LB_TO_KG + STD_CARGO_KG  # FOR RX 450h ONLY
 
     elif candidate in (CAR.CHR, CAR.CHRH, CAR.CHR_TSS2, CAR.CHRH_TSS2):
       stop_and_go = True

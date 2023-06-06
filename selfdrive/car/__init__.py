@@ -7,7 +7,7 @@ from common.numpy_fast import clip, interp
 from typing import Dict
 
 # kg of standard extra cargo to count for drive, gas, etc...
-STD_CARGO_KG = 136.
+STD_CARGO_KG = 200.
 
 ButtonType = car.CarState.ButtonEvent.Type
 EventName = car.CarEvent.EventName
