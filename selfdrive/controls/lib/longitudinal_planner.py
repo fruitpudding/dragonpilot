@@ -196,7 +196,7 @@ class LongitudinalPlanner:
     # when we see a lead
     if sm['dragonConf'].dpE2EConditionalVoacc and self.dp_e2e_has_lead:
       # drive above conditional speed and lead is too close
-      if lead_dist <= v_ego_kph * self.dp_e2e_tf * interp(v_ego_kph, [45., 50., 60., 80.], [1.40, 1.30, 1.20, 1.10]) / 3.6:
+      if lead_dist <= v_ego_kph * self.dp_e2e_tf * interp(v_ego_kph, [41., 45., 50., 60., 80.], [1.50, 1.40, 1.30, 1.20, 1.10]) / 3.6:
         self.dp_e2e_tf_count += 1
       else:
         self.dp_e2e_tf_count = 0
